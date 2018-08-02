@@ -17,7 +17,10 @@ import javax.servlet.http.HttpSession;
  * Servlet implementation class LoginServlet
  */
 @WebServlet(description = ",",
-			urlPatterns = "/LoginServlet",
+			urlPatterns = { 
+					"/LoginServlet",
+					"/"
+			},
 			initParams = { 
 					@WebInitParam(name = "user", value = "Astri"),
 					@WebInitParam(name = "password", value = "123")
