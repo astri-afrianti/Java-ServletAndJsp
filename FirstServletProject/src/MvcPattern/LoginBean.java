@@ -1,4 +1,4 @@
-package mvc.pattern;
+package MvcPattern;
 
 public class LoginBean {
 	private String name;

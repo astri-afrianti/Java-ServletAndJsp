@@ -1,4 +1,4 @@
-package mvc.pattern;
+package MvcPattern;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -26,7 +26,7 @@ public class ControllerServlet extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/mvc.pattern/LoginDoView.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/MvcPattern/LoginDoView.jsp");
 		dispatcher.include(request, response);
 	}
 
@@ -42,9 +42,9 @@ public class ControllerServlet extends HttpServlet {
 		
 		RequestDispatcher dispatcher = null;
 		if (bean.validate()) {
-			dispatcher = request.getRequestDispatcher("/mvc.pattern/LoginSuccessView.jsp");
+			dispatcher = request.getRequestDispatcher("/MvcPattern/LoginSuccessView.jsp");
 		} else {			
-			dispatcher = request.getRequestDispatcher("/mvc.pattern/LoginDoView.jsp");
+			dispatcher = request.getRequestDispatcher("/MvcPattern/LoginDoView.jsp");
 			out.println("<font color=red>Either user name or password is wrong.</font>");
 		}
 		

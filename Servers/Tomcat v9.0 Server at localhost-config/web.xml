@@ -4620,6 +4620,12 @@
         <welcome-file>LoginDo</welcome-file>
     </welcome-file-list>
     
+    <jsp-config>
+    	<taglib>
+    		<taglib-uri>http://localhost:8080/jsp/tlds/mytags</taglib-uri>
+    		<taglib-location>/WEB-INF/numberformatter.tld</taglib-location>
+    	</taglib>
+    </jsp-config>
      <context-param>
     	<param-name>cookieAgeMins</param-name>
     	<param-value>30</param-value>
